@@ -1,6 +1,6 @@
 # WDB Next.js Template
 
-Welcome to WDB's Next.js template! This project has a Next.js frontend set up but doesn't include a backend. It's pretty opinionated so feel free to make any changes to fit your project.
+Welcome to WDB's Next.js template! This project has a Next.js frontend set up but doesn't include a backend. It should usually only be used for static sites or projects where the backend functionality is embedded directly with the frontend (e.g. when using Firebase). For projects that need a normal backend, see the [monorepo template](https://github.com/web-at-berkeley/monorepo-template). It's pretty opinionated so feel free to make any changes to fit your project.
 
 # Getting Started
 
@@ -33,7 +33,7 @@ There are some initial development tasks which should be completed to set up the
 
 # Template Details
 
-There's a lot of different components in this te, so here's an overview of what's included and why:
+There's a lot of different components in this template, so here's an overview of what's included and why:
 
 ## Next.js
 
@@ -47,7 +47,7 @@ There's a lot of different components in this te, so here's an overview of what'
 
 ## Yarn
 
-[Yarn](https://yarnpkg.com/cli/install) is used as the package manager since it's generally faster than NPM due to its caching mechanisms. It also works better with [monorepos](https://en.wikipedia.org/wiki/Monorepo), and even though this isn't a monorepo it's useful to be consistent with [the monorepo template](https://github.com/web-at-berkeley/monorepo-template). NPM commands that install packages should fail to avoid conflicting with Yarn (configured in [`.npmrc`](.npmrc)). Here's the list of commands to use instead:
+[Yarn](https://yarnpkg.com/cli/install) is used as the package manager since it's generally faster than NPM due to its caching mechanisms. It also works better with [monorepos](https://en.wikipedia.org/wiki/Monorepo), and even though this isn't a monorepo it's useful to be consistent with the [monorepo template](https://github.com/web-at-berkeley/monorepo-template). NPM commands that install packages should fail to avoid conflicting with Yarn (configured in [`.npmrc`](.npmrc)). Here's the list of commands to use instead:
 
 - `yarn` (replaces `npm install`) - install all dependencies
 - `yarn add <package>` (replaces `npm install <package>` - install a package

@@ -57,12 +57,12 @@ module.exports = {
     "func-style": ["error", "declaration", { allowArrowFunctions: true }],
     "no-constant-condition": ["error", { checkLoops: false }],
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "warn",
     "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
     "@typescript-eslint/prefer-string-starts-ends-with": "warn",
     "@typescript-eslint/require-await": "warn",
     "@typescript-eslint/no-misused-promises": "off",
@@ -97,6 +97,18 @@ module.exports = {
     "react/jsx-pascal-case": "error",
     "react/jsx-curly-brace-presence": "error",
     "react/self-closing-comp": "error",
+    "react/forbid-elements": [
+      "warn",
+      {
+        forbid: [
+          {
+            element: "Link",
+            message:
+              "use one of the Link utility components instead (see https://github.com/web-at-berkeley/nextjs-template#utility-components)",
+          },
+        ],
+      },
+    ],
     "import/order": ["error", { "newlines-between": "always" }],
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",

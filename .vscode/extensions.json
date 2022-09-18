@@ -4,7 +4,7 @@
     "esbenp.prettier-vscode", // Prettier
     "editorconfig.editorconfig", // EditorConfig
     "mikestead.dotenv", // dotenv
-    "mgmcdermott.vscode-language-babel", // JavaScript syntax support,
+    "mgmcdermott.vscode-language-babel", // JavaScript syntax support
     "formulahendry.auto-rename-tag" // edit paired HTML/React tags at the same time
   ]
 }
